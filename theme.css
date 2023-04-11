@@ -1,11 +1,58 @@
-body{
+:root {
+  --entry-content-font-family: "LXGW WenKai", "Microsoft YaHei", "Helvetica";
+  --font-family: "LXGW WenKai", "Microsoft YaHei", "Helvetica"
+}
+
+body {
   max-width: 1000px;
 }
 
-article{
+article {
   padding: 0 10px;
 }
 
-.pagination{
+.pagination {
   padding: 5px 10px 0;
+}
+
+.items {
+  padding: 0 10px;
+}
+
+.items .item {
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 8px;
+
+}
+
+.pagination-prev::before {
+  content: "< "
+}
+
+.pagination-next::after {
+  content: " >"
+}
+
+.entry-content h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 25px;
+}
+
+
+/* mobile */
+@media (max-width: 600px) {
+  .entry header h1 {
+    font-size: 1.8em
+  }
+
+  .entry-content {
+    font-size: 1em;
+    line-height: 1.6em;
+  }
 }
