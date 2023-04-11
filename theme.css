@@ -44,6 +44,11 @@ p {
   margin-bottom: 25px;
 }
 
+.entry-content iframe, 
+.entry-content video, 
+.entry-content img {
+    max-height: 800px;
+}
 
 /* mobile */
 @media (max-width: 600px) {
