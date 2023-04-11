@@ -1,4 +1,4 @@
-# miniflux-css-theme
+# miniflux-flat-theme
 
 ## What is this?
 
