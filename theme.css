@@ -4,21 +4,27 @@
 }
 
 body {
-  max-width: 1000px;
+  max-width: 900px;
+}
+
+main {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 article {
   padding: 0 10px;
 }
 
-.pagination {
-  padding: 5px 10px 0;
+.page-header {
+  margin-bottom: 10px;
 }
 
-.items {
-  padding: 0 10px;
+.entry header {
+  padding: 0 10px 5px;
 }
 
+/* 列表 */
 .items .item {
   border: 1px solid;
   border-radius: 4px;
@@ -26,6 +32,11 @@ article {
 
 }
 
+.items .item img {
+  margin-bottom: -2px;
+}
+
+/* 分页 */
 .pagination-prev::before {
   content: "< "
 }
@@ -34,20 +45,43 @@ article {
   content: " >"
 }
 
+/* 正文标题 */
+.page-header h1 {
+  border-bottom: 1px solid var(--page-header-title-border-color);
+  margin-bottom: 4px;
+}
+
+/* 正文 */
 .entry-content h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   margin-bottom: 25px;
 }
 
-.entry-content iframe, 
-.entry-content video, 
+.entry-content p {
+  margin-bottom: 25px;
+}
+
+.entry-content {
+  line-height: 1.8em;
+}
+
+.entry-content figure img {
+  border: none
+}
+
+.entry-content figcaption {
+  line-height: 1.2em
+}
+
+/* 正文图片 */
+.entry-content iframe,
+.entry-content video,
 .entry-content img {
-    max-height: 800px;
+  max-height: 800px;
 }
 
 /* mobile */
