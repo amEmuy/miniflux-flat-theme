@@ -1,6 +1,8 @@
 :root {
   --entry-content-font-family: "LXGW WenKai", "Microsoft YaHei", "Helvetica";
-  --font-family: "LXGW WenKai", "Microsoft YaHei", "Helvetica"
+  --font-family: "LXGW WenKai", "Microsoft YaHei", "Helvetica";
+  --entry-content-font-weight: 400;
+  --link-hover-color: #fc6423;
 }
 
 body {
@@ -16,24 +18,34 @@ article {
   padding: 0 10px;
 }
 
+/* 菜单 */
 .page-header {
   margin-bottom: 10px;
 }
 
 .entry header {
   padding: 0 10px 5px;
+  border-bottom: 1px solid var(--entry-header-border-color);
 }
 
 /* 列表 */
 .items .item {
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 8px;
-
+  border: none;
+  border-bottom: 1px solid var(--page-header-title-border-color);
+  padding: 8px 0;
+  margin-bottom: 5px;
 }
 
 .items .item img {
   margin-bottom: -2px;
+}
+
+.item-status-read .item-title a {
+  color: var(--entry-header-title-link-color);
+}
+
+.item-status-read .item-title a:hover {
+  color: #666;
 }
 
 /* 分页 */
@@ -82,6 +94,10 @@ h6 {
 .entry-content video,
 .entry-content img {
   max-height: 800px;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* mobile */
