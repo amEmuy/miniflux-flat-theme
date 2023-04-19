@@ -3,6 +3,7 @@
   --font-family: "LXGW WenKai", "Microsoft YaHei", "Helvetica";
   --entry-content-font-weight: 400;
   --link-hover-color: #fc6423;
+  --item-title-link-font-weight: 500;
 }
 
 body {
@@ -14,8 +15,16 @@ main {
   padding-right: 10px;
 }
 
+.search {
+  display: none;
+}
+
 article {
   padding: 0 10px;
+}
+
+.header {
+  margin-bottom: 20px;
 }
 
 /* 菜单 */
