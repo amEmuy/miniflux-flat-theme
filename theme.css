@@ -101,6 +101,7 @@ h6 {
 .entry-content iframe,
 .entry-content video{
   width: 100%;
+  aspect-ratio: 16/9;
 }
 
 /* 正文图片 */
