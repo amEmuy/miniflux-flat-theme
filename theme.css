@@ -98,9 +98,12 @@ h6 {
   line-height: 1.2em
 }
 
-/* 正文图片 */
 .entry-content iframe,
-.entry-content video,
+.entry-content video{
+  width: 100%;
+}
+
+/* 正文图片 */
 .entry-content img {
   max-height: 800px;
 }
